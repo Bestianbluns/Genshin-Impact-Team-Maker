@@ -1,0 +1,151 @@
+@font-face{
+    src: url(fonts/zh-cn.ttf);
+    font-family: Genshin-Impact-Font;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #2f3640;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.title{
+    margin-top: 2vh;
+}
+.characters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #353b48;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0,0,0,.24), 0 1px 3px rgba(0,0,0,.12);
+    margin-top: 5vh;
+    padding: 15px 0;
+}
+.title h1{
+    font-family: Genshin-Impact-Font;
+    color: #f5f6fa;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.title h2{
+    font-family: Genshin-Impact-Font;
+    color: #f6e58d;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 5px;
+}
+.character{
+    margin: 5px 20px;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    padding: 2px 7px;
+    box-shadow: 0px 0px 7px 1px #1e272e;
+}
+.character:hover{
+    border: 1px solid #d1d8e0;
+    box-shadow: 0px 0px 7px 1px #808e9b;
+}
+.char{
+    width: 100px;
+}
+.character h2{
+    font-family: sans-serif;
+    color: #dcdde1;
+    text-align: center;
+    font-size: 100%;
+}
+.element{
+    position: relative;
+    width: 30px;
+    margin-left: -30px;;
+    background-color: #2f3640;
+    border-radius: 50%;
+}
+.generate{
+    text-align: center;
+    margin: 7vh 0;
+    display: block;
+}
+.generate h2{
+    background-color: #7bed9f;
+    width: 25%;
+    margin: auto;
+    font-family: sans-serif;
+    color: #2d3436;
+    user-select: none;
+    padding: 10px 0;
+    border: 1px solid #2d3436;
+    box-shadow: 0px 0px 7px 1px #1e272e;
+    cursor: pointer;
+}
+.back{
+    display: none;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.back a{
+    font-size: 5vh;
+    color: #f5f6fa;
+}
+.test .team{
+    display: flex;
+}
+.title-team{
+    color: #dcdde1;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5vh;
+}
+@media (max-width: 932px) {
+    .container{
+        width: 97%;
+        margin: auto;
+    }
+    .generate h2{
+        width: 50%;
+        font-size: large;
+    }
+    .title-team{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .test .character h2{
+        font-size: 15px;
+        padding: 0;
+    }
+}
+@media (max-width: 680px) {
+    .title-team{
+        font-size: 15px;
+    }
+    .container{
+        width: 97%;
+        margin: auto;
+    }
+    .team{
+        width: 300px;
+        justify-content: space-between;
+    }
+    .team .character{
+        width: 20%;
+        margin: 10px 10px;
+    }
+    .team .char{
+        width: 40px;
+    }
+    .team .element{
+        width: 10px;
+        left: 25px;
+    }
+    .test .character h2{
+        font-size: 7px;
+    }
+}
